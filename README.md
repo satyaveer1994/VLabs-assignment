@@ -30,32 +30,32 @@ API Endpoints
 
 # The following API endpoints are available:
 
-Books
+# Books
 
-    GET /api/books: Get a list of all available books.
-    GET /api/books/:id: Get information about a specific book.
-    POST /api/books: Add a new book.
-    PUT /api/books/:id: Update an existing book.
-    DELETE /api/books/:id: Delete a book.
+    router.get("/allBook",);
+    router.post("/addBook");
+    router.put("/:id", );
+    router.delete("/:id",);
 
-Members
 
-    GET /api/members: Get a list of all members.
-    GET /api/members/:id: Get information about a specific member.
-    POST /api/members: Add a new member.
-    PUT /api/members/:id: Update an existing member.
-    DELETE /api/members/:id: Delete a member.
+# Members
 
-Borrowing
+    router.get("/allMember",);
+    router.post("/addMember",);
+    router.put("/:id",);
+    router.delete("/:id");
 
-    GET /api/borrowed: Get a list of all borrowed books.
-    POST /api/borrowed: Borrow a book.
-    PUT /api/borrowed/:id: Return a borrowed book.
+# Borrowing
 
-Users
+    router.post('/addBorrow');
+    router.put('/:id');
 
-    router.post('/register:
-    router.post('/login:
+
+# Users
+
+    router.post('/register', userController.register);
+    router.post('/login', userController.login);
+
 
 # Authentication
 
